@@ -1,7 +1,7 @@
 # flex实现手风琴效果和圣杯三列布局，超简单
 ## accordion
     主要思路就是，使用flex的flex属性，实现自适应的grow和shrink
-    当hover时，item放大，其它tiem根据flex属性自动缩小，实现手风琴拉拽效果。
+    当hover时，item放大，其它item根据flex属性自动缩小，实现手风琴拉拽效果。
     .item flex:1;
     .item:hover flex:35%;
 
