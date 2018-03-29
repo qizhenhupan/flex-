@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        .layout{
+            width:800px;
+            margin:0 auto;
+            overflow: hidden;
+            height:200px;
+            outline:red solid 2px;
+        }
+        .layout>*{
+            float:left;
+            height:100%;
+        }
+        .center{
+            width:100%;
+            box-sizing:border-box;
+            padding: 0 210px;
+            background-clip:content-box;
+            background-color:lightseagreen;
+        }
+        .left{
+            width:200px;
+            margin-left:-100%;
+            background:lightgreen;
+        }
+        .right{
+            width:200px;
+            margin-left: -200px;
+            background:lightcoral;
+        }
+        .accordion{
+            width:800px;
+            margin:100px auto;
+            outline:blue solid 2px;
+            overflow:hidden;
+            height:200px;
+            background:red;
+        }
+        .item{
+            float:left;
+            width:160px;
+            height:100%;
+            transition: width  linear .3s;
+        }
+        .item:nth-child(1){background:lightgreen;}
+        .item:nth-child(2){background:lightcoral;}
+        .item:nth-child(3){background:lightseagreen;}
+        .item:nth-child(4){background:lightgoldenrodyellow;}
+        .item:nth-child(5){background:lightblue;}
+        .accordion:hover .item{
+            width:125px;
+        }
+        .accordion:hover .item:hover{
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <div class="center main-content">
+        center
+        <p>holy grail</p>
+    </div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+<div class="accordion">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+</body>
+</html>
